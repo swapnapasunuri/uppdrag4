@@ -1,8 +1,4 @@
-//https://github.com/ObjectiveTester/AllThingsTesting.com-examples/blob/master/SeleniumParallel/src/test/java/com/example/objects/CartPage.java
-//https://stackoverflow.com/questions/31555652/how-to-count-the-products-on-a-page-using-selenium
-//https://github.com/ObjectiveTester/AllThingsTesting.com-examples/blob/master/SeleniumParallel/src/test/java/com/example/objects/InventoryPage.java
-//https://allthingstesting.com/ui-testing-with-selenium-record-and-refactor/
-//edge://favorites/?id=243
+
 
 
 package test_page.shop;
@@ -36,7 +32,7 @@ public class TestLogin {
     //TestNG -->
     @BeforeTest
     public void setup(){
-        File file = new File("src/main/resources/chromedriver.exe");
+        //File file = new File("src/main/resources/chromedriver.exe");
         System.setProperty("web-driver.chrome.driver", file.getAbsoluteFile().toString());
 
     }
