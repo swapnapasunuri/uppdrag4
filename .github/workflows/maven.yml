@@ -29,7 +29,7 @@ jobs:
         cache: maven
     - name: Install Chrome
       run: chmod +x ./scripts/install_chrome.sh
-          ./install_chrome.sh    
+          ./scripts/install_chrome.sh    
     - name: Build with Maven
       run: mvn -B package --file pom.xml
 
