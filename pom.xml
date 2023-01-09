@@ -13,7 +13,12 @@
         <maven.compiler.target>18</maven.compiler.target>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
     </properties>
-
+         
+     <build>
+        <sourceDirectory>src</sourceDirectory>
+        <testSourceDirectory>test</testSourceDirectory>
+    </build>
+         
     <dependencies>
     <dependency>
         <groupId>org.junit.jupiter</groupId>
