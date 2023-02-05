@@ -7,6 +7,7 @@
 
 package test_page.shop;
 
+import org.asynchttpclient.util.Assertions;
 import org.junit.Assert;
 import org.openqa.selenium.By;
 import org.openqa.selenium.JavascriptExecutor;
@@ -18,7 +19,7 @@ import java.time.Duration;
 import java.util.List;
 import java.util.NoSuchElementException;
 import java.util.concurrent.TimeUnit;
-import org.junit.jupiter.api.*;
+//import org.junit.jupiter.api.*;
 import static org.junit.Assert.assertTrue;
 import org.junit.Test;
 import org.openqa.selenium.chrome.ChromeOptions;
@@ -180,7 +181,7 @@ public class TestLogin {
 
 
         System.out.println(total_sum + " ==? " + f);
-        Assertions.assertEquals(total_sum, f);
+        Assert.assertEquals(total_sum, f);
         driver.manage().timeouts().implicitlyWait(20, TimeUnit.SECONDS) ; //Deprecated
 
 ////////////////////////////////////////////////////////
